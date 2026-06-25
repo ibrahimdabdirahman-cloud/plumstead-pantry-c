@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<style>
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:#FFE7C2; }
+  a { text-decoration:none; cursor:pointer; color:inherit; }
+  image-slot { display:block; }
+  ::selection { background:#E8654E; color:#fff; }
+</style>
+</helmet>
+
+<div style="background:#FFF7EC;color:#3A2C20;font-family:'Nunito',system-ui;max-width:1280px;margin:0 auto;box-shadow:0 0 120px rgba(58,44,32,.16)">
+
+  <header style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 44px;background:rgba(255,247,236,.93);backdrop-filter:blur(10px)">
+    <a href="#top" style="display:flex;align-items:center;gap:10px">
+      <div style="width:38px;height:38px;border-radius:50%;background:#E8654E;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',cursive;font-weight:800;font-size:20px">P</div>
+      <div style="font-family:'Baloo 2',cursive;font-weight:800;font-size:21px">The Plumstead Pantry</div>
+    </a>
+    <nav style="display:flex;gap:24px;font-size:14px;font-weight:700;color:#6a5340">
+      <a href="#menu" style="color:#6a5340">Menu</a>
+      <a href="#food" style="color:#6a5340">Our Food</a>
+      <a href="#sunday" style="color:#6a5340">Sunday &amp; Evenings</a>
+      <a href="#catering" style="color:#6a5340">Catering</a>
+      <a href="#gallery" style="color:#6a5340">Gallery</a>
+      <a href="#find" style="color:#6a5340">Find Us</a>
+    </nav>
+    <a href="#find" style="background:#2E9B8A;color:#fff;padding:11px 22px;border-radius:999px;font-size:14px;font-weight:800">Book a table</a>
+  </header>
+
+  <a id="top"></a>
+  <section style="position:relative;padding:54px 44px 60px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:radial-gradient(circle at 80% 20%, #FFE7C2 0%, #FFF7EC 60%)">
+    <div>
+      <div style="display:inline-block;background:#F6B43C;color:#3A2C20;font-weight:800;font-size:12.5px;padding:7px 14px;border-radius:999px;margin-bottom:20px">Everyone's welcome at the table</div>
+      <h1 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:64px;line-height:1.02;margin:0 0 20px">Good food,<br>good company,<br><span style="color:#E8654E">good morning!</span></h1>
+      <p style="font-size:17px;line-height:1.6;color:#6a5340;max-width:430px;margin:0 0 30px;font-weight:600">From little ones' breakfasts to big family roasts — the friendliest kitchen in Plumstead, open all day.</p>
+      <div style="display:flex;gap:14px">
+        <a href="#menu" style="background:#E8654E;color:#fff;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px">See the menu</a>
+        <a href="#find" style="background:#fff;border:2px solid #F6B43C;color:#3A2C20;padding:13px 26px;border-radius:999px;font-weight:800;font-size:15px">Find us</a>
+      </div>
+    </div>
+    <image-slot id="c2-hero" style="width:100%;height:430px;border:6px solid #fff;box-shadow:0 16px 40px rgba(58,44,32,.16)" shape="rounded" radius="24" data-src="assets/p13.png" placeholder="Hero photo"></image-slot>
+  </section>
+
+  <section style="padding:26px 44px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;background:#2E9B8A">
+    <div style="color:#fff;font-weight:800;font-size:15px">Breakfast all day</div>
+    <div style="color:rgba(255,255,255,.5)">•</div>
+    <div style="color:#fff;font-weight:800;font-size:15px">Cakes baked fresh</div>
+    <div style="color:rgba(255,255,255,.5)">•</div>
+    <div style="color:#fff;font-weight:800;font-size:15px">Little ones' menu</div>
+    <div style="color:rgba(255,255,255,.5)">•</div>
+    <div style="color:#fff;font-weight:800;font-size:15px">Dog friendly</div>
+    <div style="color:rgba(255,255,255,.5)">•</div>
+    <div style="color:#fff;font-weight:800;font-size:15px">Sunday roasts</div>
+  </section>
+
+  <section id="food" style="padding:64px 44px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:56px">
+      <image-slot id="c2-story" style="width:100%;height:360px;border:6px solid #fff;box-shadow:0 12px 30px rgba(58,44,32,.12)" shape="rounded" radius="22" data-src="assets/j07.jpg" placeholder="Kitchen photo"></image-slot>
+      <div>
+        <div style="display:inline-block;background:#2E9B8A;color:#fff;font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:999px;margin-bottom:16px">Our food</div>
+        <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:40px;margin:0 0 16px;line-height:1.04">Made fresh, made with love.</h2>
+        <p style="font-size:16px;line-height:1.6;color:#6a5340;margin:0 0 14px;font-weight:600">We bake our own bread and cakes every morning and work with local suppliers we know and trust. Big plates, friendly prices, room for the whole family.</p>
+        <p style="font-size:16px;line-height:1.6;color:#6a5340;margin:0;font-weight:600">5-star food hygiene, RSPCA Assured and Red Tractor meat — proper food you can feel good about.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-bottom:36px">
+      <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:42px;margin:0 0 8px">Tuck in!</h2>
+      <p style="font-size:16px;color:#8a7256;margin:0;font-weight:600">A few family favourites from our kitchen</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+      <div style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(58,44,32,.08)">
+        <image-slot id="c2-d1" style="width:100%;height:210px" shape="rect" data-src="assets/j14.jpg" placeholder="Dish"></image-slot>
+        <div style="padding:20px 22px 24px">
+          <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:21px">Pantry Full Breakfast</div>
+          <p style="font-size:14px;line-height:1.5;color:#8a7256;margin:6px 0 12px;font-weight:600">The full works — sausage, bacon, eggs, hash browns, beans and toast.</p>
+          <span style="background:#FFE7C2;color:#3A2C20;font-weight:800;padding:5px 12px;border-radius:999px;font-size:13px">£16</span>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(58,44,32,.08)">
+        <image-slot id="c2-d2" style="width:100%;height:210px" shape="rect" data-src="assets/p08.png" placeholder="Dish"></image-slot>
+        <div style="padding:20px 22px 24px">
+          <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:21px">Cheese Chutney Toastie</div>
+          <p style="font-size:14px;line-height:1.5;color:#8a7256;margin:6px 0 12px;font-weight:600">Oozy, golden and toasted — a lunchtime favourite for all ages.</p>
+          <span style="background:#FFE7C2;color:#3A2C20;font-weight:800;padding:5px 12px;border-radius:999px;font-size:13px">£9</span>
+        </div>
+      </div>
+      <div style="background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(58,44,32,.08)">
+        <image-slot id="c2-d3" style="width:100%;height:210px" shape="rect" data-src="assets/j20.jpg" placeholder="Dish"></image-slot>
+        <div style="padding:20px 22px 24px">
+          <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:21px">Granola &amp; Yogurt Pots</div>
+          <p style="font-size:14px;line-height:1.5;color:#8a7256;margin:6px 0 12px;font-weight:600">Layered with fruit compote and toasted granola — fresh each morning.</p>
+          <span style="background:#FFE7C2;color:#3A2C20;font-weight:800;padding:5px 12px;border-radius:999px;font-size:13px">£6</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" style="padding:64px 44px;background:#fff">
+    <div style="text-align:center;margin-bottom:44px">
+      <div style="display:inline-block;background:#F6B43C;color:#3A2C20;font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:999px;margin-bottom:14px">The menu</div>
+      <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:46px;margin:0">All day, every day</h2>
+      <p style="font-size:14px;color:#8a7256;margin:12px 0 0;font-weight:700">Served 9am–2:30pm weekdays · 9am–3pm weekends</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px 50px;max-width:1020px;margin:0 auto">
+      <div style="background:#FFF7EC;border-radius:22px;padding:28px 28px">
+        <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:24px;margin:0 0 16px;color:#E8654E">Breakfast</h3>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Pantry Full Breakfast</div><div style="font-size:13px;color:#8a7256;font-weight:600">Sausages, bacon, fried egg, hash browns, sourdough, beans &amp; mushrooms</div></div><div style="font-weight:800;color:#E8654E">£16</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Pantry Veg Breakfast</div><div style="font-size:13px;color:#8a7256;font-weight:600">Vegan sausages, fried eggs, spinach, hash browns &amp; the trimmings</div></div><div style="font-weight:800;color:#E8654E">£15.5</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Pantry Vegan Breakfast</div><div style="font-size:13px;color:#8a7256;font-weight:600">Vegan sausages, avocado, spinach, hash browns &amp; Pantry beans</div></div><div style="font-weight:800;color:#E8654E">£15.5</div></div>
+        </div>
+      </div>
+      <div style="background:#FFF7EC;border-radius:22px;padding:28px 28px">
+        <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:24px;margin:0 0 16px;color:#E8654E">Benedict</h3>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Eggs Benedict</div><div style="font-size:13px;color:#8a7256;font-weight:600">Spinach, slow-roast ham, poached eggs &amp; hollandaise</div></div><div style="font-weight:800;color:#E8654E">£15</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Eggs Royale</div><div style="font-size:13px;color:#8a7256;font-weight:600">Smoked salmon, king prawns, poached eggs &amp; hollandaise</div></div><div style="font-weight:800;color:#E8654E">£16</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Eggs Caprese</div><div style="font-size:13px;color:#8a7256;font-weight:600">Avocado, poached eggs, hollandaise, basil tomato &amp; olives</div></div><div style="font-weight:800;color:#E8654E">£14</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Eggs Florentine</div><div style="font-size:13px;color:#8a7256;font-weight:600">Portabella &amp; sautéed mushrooms, poached eggs &amp; hollandaise</div></div><div style="font-weight:800;color:#E8654E">£14</div></div>
+        </div>
+      </div>
+      <div style="background:#FFF7EC;border-radius:22px;padding:28px 28px">
+        <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:24px;margin:0 0 16px;color:#E8654E">Brunch Plates</h3>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Avocado Toasts</div><div style="font-size:13px;color:#8a7256;font-weight:600">Humus, avocado, radish, cherry tomato, feta &amp; seeds</div></div><div style="font-weight:800;color:#E8654E">£12.5</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Za'atar Sweet Potato</div><div style="font-size:13px;color:#8a7256;font-weight:600">Baharat sweet potato, radish, feta, grapefruit &amp; seeds</div></div><div style="font-weight:800;color:#E8654E">£12.5</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Smoked Salmon &amp; Eggs</div><div style="font-size:13px;color:#8a7256;font-weight:600">Sourdough, smoked salmon, scrambled or poached eggs &amp; lemon</div></div><div style="font-weight:800;color:#E8654E">£14</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div><div style="font-weight:800;font-size:15px">Kids' Smoothie</div><div style="font-size:13px;color:#8a7256;font-weight:600">A fruity blend for the little ones</div></div><div style="font-weight:800;color:#E8654E">£2</div></div>
+        </div>
+      </div>
+      <div style="background:#FFF7EC;border-radius:22px;padding:28px 28px">
+        <h3 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:24px;margin:0 0 16px;color:#E8654E">Toasties &amp; Drinks</h3>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;justify-content:space-between;gap:14px"><div style="font-weight:800;font-size:15px">Cheese Chutney Toastie</div><div style="font-weight:800;color:#E8654E">£9</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div style="font-weight:800;font-size:15px">Haloumi, Harissa &amp; Mushroom</div><div style="font-weight:800;color:#E8654E">£11</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div style="font-weight:800;font-size:15px">BLT Bloomer</div><div style="font-weight:800;color:#E8654E">£9</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div style="font-weight:800;font-size:15px">Flat White / Latte</div><div style="font-weight:800;color:#E8654E">£3.20</div></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><div style="font-weight:800;font-size:15px">Hot Chocolate</div><div style="font-weight:800;color:#E8654E">£4</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sunday" style="padding:60px 44px">
+    <div style="background:#F6B43C;border-radius:28px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-bottom:40px">
+      <div>
+        <div style="display:inline-block;background:#3A2C20;color:#fff;font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:999px;margin-bottom:16px">Sunday lunch &amp; evenings</div>
+        <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:40px;margin:0 0 14px;line-height:1.05">Make Sunday a family thing.</h2>
+        <p style="font-size:16px;line-height:1.6;color:#5a4632;margin:0 0 26px;font-weight:600;max-width:420px">Roasts from noon and cosy evenings on Fridays &amp; Saturdays. Highchairs ready, big tables welcome.</p>
+        <a href="#find" style="background:#E8654E;color:#fff;padding:14px 28px;border-radius:999px;font-weight:800;font-size:15px;display:inline-block">Book your table</a>
+      </div>
+      <image-slot id="c2-sunday" style="width:100%;height:300px;border:6px solid #fff" shape="rounded" radius="22" data-src="assets/j19.jpg" placeholder="Sunday photo"></image-slot>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="background:#fff;border-radius:22px;padding:24px;box-shadow:0 8px 24px rgba(58,44,32,.07)">
+        <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:20px">Roast Beef <span style="color:#E8654E">£25</span></div>
+        <p style="font-size:13.5px;color:#8a7256;line-height:1.5;margin:6px 0 0;font-weight:600">Pink Scotch beef, brisket Yorkshire, cauliflower cheese, roast potatoes &amp; horseradish.</p>
+      </div>
+      <div style="background:#fff;border-radius:22px;padding:24px;box-shadow:0 8px 24px rgba(58,44,32,.07)">
+        <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:20px">Herb Roast Chicken <span style="color:#E8654E">£22</span></div>
+        <p style="font-size:13.5px;color:#8a7256;line-height:1.5;margin:6px 0 0;font-weight:600">Herb &amp; lemon chicken with all the trimmings and chilli-cranberry sauce.</p>
+      </div>
+      <div style="background:#fff;border-radius:22px;padding:24px;box-shadow:0 8px 24px rgba(58,44,32,.07)">
+        <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:20px">Root Veg Strudel <span style="color:#E8654E">£18</span></div>
+        <p style="font-size:13.5px;color:#8a7256;line-height:1.5;margin:6px 0 0;font-weight:600">Root vegetable &amp; Devonshire brie strudel with Yorkshire pudding &amp; the spread.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="catering" style="padding:20px 44px 60px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center">
+    <image-slot id="c2-catering" style="width:100%;height:340px;border:6px solid #fff;box-shadow:0 12px 30px rgba(58,44,32,.12)" shape="rounded" radius="22" data-src="assets/j21.jpg" placeholder="Catering photo"></image-slot>
+    <div>
+      <div style="display:inline-block;background:#2E9B8A;color:#fff;font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:999px;margin-bottom:16px">Catering &amp; events</div>
+      <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:40px;margin:0 0 14px;line-height:1.05">Let's throw a party!</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6a5340;margin:0 0 22px;font-weight:600;max-width:420px">Birthdays, christenings and get-togethers — colourful platters and buffets made to order, right across SE18.</p>
+      <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:26px;font-size:14.5px;color:#6a5340;font-weight:700">
+        <div>· Sandwich &amp; cake platters</div>
+        <div>· Hot &amp; cold buffets</div>
+        <div>· Celebration cakes to order</div>
+        <div>· Delivery across south-east London</div>
+      </div>
+      <a href="#find" style="background:#fff;border:2px solid #2E9B8A;color:#2E9B8A;padding:12px 26px;border-radius:999px;font-weight:800;font-size:15px;display:inline-block">Enquire now</a>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding:0 44px 60px">
+    <div style="text-align:center;margin-bottom:36px">
+      <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:42px;margin:0">Say cheese!</h2>
+      <p style="font-size:15px;color:#8a7256;margin:6px 0 0;font-weight:600">A peek inside the Pantry</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:185px;gap:14px">
+      <image-slot id="c2-g1" style="width:100%;height:100%;border:5px solid #fff;grid-row:span 2" shape="rounded" radius="18" data-src="assets/j20.jpg" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g2" style="width:100%;height:100%;border:5px solid #fff" shape="rounded" radius="18" data-src="assets/j14.jpg" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g3" style="width:100%;height:100%;border:5px solid #fff" shape="rounded" radius="18" data-src="assets/p08.png" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g4" style="width:100%;height:100%;border:5px solid #fff;grid-row:span 2" shape="rounded" radius="18" data-src="assets/j15.jpg" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g5" style="width:100%;height:100%;border:5px solid #fff" shape="rounded" radius="18" data-src="assets/p07.png" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g6" style="width:100%;height:100%;border:5px solid #fff" shape="rounded" radius="18" data-src="assets/p04.png" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g7" style="width:100%;height:100%;border:5px solid #fff;grid-column:span 2" shape="rounded" radius="18" data-src="assets/p13.png" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g8" style="width:100%;height:100%;border:5px solid #fff" shape="rounded" radius="18" data-src="assets/j13.jpg" placeholder="Photo"></image-slot>
+      <image-slot id="c2-g9" style="width:100%;height:100%;border:5px solid #fff" shape="rounded" radius="18" data-src="assets/j21.jpg" placeholder="Photo"></image-slot>
+    </div>
+  </section>
+
+  <section style="background:#2E9B8A;padding:44px;display:flex;align-items:center;justify-content:center;gap:44px;flex-wrap:wrap">
+    <div style="text-align:center;color:#fff"><div style="font-family:'Baloo 2',cursive;font-weight:800;font-size:30px">5★</div><div style="font-size:12.5px;font-weight:700;opacity:.85">Food hygiene</div></div>
+    <div style="width:1px;height:40px;background:rgba(255,255,255,.3)"></div>
+    <div style="text-align:center;color:#fff"><div style="font-family:'Baloo 2',cursive;font-weight:800;font-size:17px">RSPCA Assured</div><div style="font-size:12.5px;font-weight:700;opacity:.85">&amp; Red Tractor meat</div></div>
+    <div style="width:1px;height:40px;background:rgba(255,255,255,.3)"></div>
+    <div style="text-align:center;color:#fff"><div style="font-family:'Baloo 2',cursive;font-weight:800;font-size:17px">Award Winning Food</div><div style="font-size:12.5px;font-weight:700;opacity:.85">Certified 2022</div></div>
+    <div style="width:1px;height:40px;background:rgba(255,255,255,.3)"></div>
+    <div style="text-align:center;color:#fff"><div style="font-family:'Baloo 2',cursive;font-weight:800;font-size:17px">Dog Friendly</div><div style="font-size:12.5px;font-weight:700;opacity:.85">Pups &amp; cups welcome</div></div>
+  </section>
+
+  <section id="find" style="background:#FFE7C2;padding:60px 44px;display:grid;grid-template-columns:1.1fr 1fr;gap:44px">
+    <div>
+      <div style="display:inline-block;background:#E8654E;color:#fff;font-weight:800;font-size:12.5px;padding:6px 14px;border-radius:999px;margin-bottom:16px">Find us</div>
+      <h2 style="font-family:'Baloo 2',cursive;font-weight:800;font-size:40px;margin:0 0 18px">Pop in and say hello</h2>
+      <div style="font-size:16px;line-height:1.5;color:#3A2C20;font-weight:700;margin-bottom:22px">16 Warwick Terrace<br>Plumstead, London SE18 1QJ</div>
+      <div style="font-size:14.5px;font-weight:700;color:#5a4632;line-height:2;max-width:320px;margin-bottom:22px">
+        <div style="display:flex;justify-content:space-between"><span>Mon – Fri</span><span style="color:#E8654E">9:00 – 2:30</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Sat – Sun</span><span style="color:#E8654E">9:00 – 3:00</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Sunday roast</span><span style="color:#E8654E">from 12:00</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Fri – Sat evenings</span><span style="color:#E8654E">6:00 – 9:30</span></div>
+      </div>
+      <div style="font-size:14.5px;color:#5a4632;line-height:1.8;font-weight:700">
+        <div>0208 793 7066</div>
+        <div>theplumsteadpantryse18@gmail.com</div>
+      </div>
+    </div>
+    <image-slot id="c2-map" style="width:100%;height:300px;border:6px solid #fff" shape="rounded" radius="22" data-src="assets/j15.jpg" placeholder="Storefront / map"></image-slot>
+  </section>
+
+  <footer style="background:#3A2C20;color:#cbb89f;padding:36px 44px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+    <div>
+      <div style="font-family:'Baloo 2',cursive;font-weight:800;font-size:20px;color:#fff">The Plumstead Pantry</div>
+      <div style="font-size:13px;margin-top:6px;font-weight:600">16 Warwick Terrace · Plumstead · London SE18 1QJ</div>
+    </div>
+    <div style="display:flex;gap:22px;font-size:13.5px;font-weight:700">
+      <a href="#menu">Menu</a><a href="#sunday">Sunday</a><a href="#catering">Catering</a><a href="#find">Find Us</a>
+    </div>
+    <div style="font-size:13px;font-weight:600">© The Plumstead Pantry</div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
