@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://plumstead-pantry-c.vercel.app/sitemap.xml
