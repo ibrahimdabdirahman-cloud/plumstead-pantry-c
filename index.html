@@ -55,6 +55,18 @@
   a { text-decoration:none; cursor:pointer; color:inherit; }
   image-slot { display:block; }
   ::selection { background:#E8654E; color:#fff; }
+  @media (max-width:768px){
+    [style*="grid-template-columns"]{grid-template-columns:1fr !important;}
+    [style*="grid-column"]{grid-column:auto !important;}
+    [style*="grid-row"]{grid-row:auto !important;}
+    [style*="grid-area"]{grid-area:auto !important;}
+    section[style*="display:flex"],section[style*="display: flex"]{flex-direction:column !important;align-items:stretch !important;}
+    header{flex-wrap:wrap !important;row-gap:10px !important;}
+    header nav{display:none !important;}
+    section,header,footer{padding-left:18px !important;padding-right:18px !important;}
+    h1{font-size:clamp(30px,8.5vw,46px) !important;line-height:1.05 !important;}
+    h2{font-size:clamp(24px,6vw,38px) !important;}
+  }
 </style>
 </helmet>
 
@@ -295,6 +307,7 @@
 <!-- masul:start -->
 <script>
 window.MASUL_SITE_ID="plumstead-c";
+window.MASUL_NAME="The Plumstead Pantry";
 window.MASUL_ACCENT="#E8654E";
 window.MASUL_MENU=[{"cat":"Breakfast","name":"Pantry Full Breakfast","price":16},{"cat":"Breakfast","name":"Pantry Veg Breakfast","price":15.5},{"cat":"Breakfast","name":"Pantry Vegan Breakfast","price":15.5},{"cat":"Benedict","name":"Eggs Benedict","price":15},{"cat":"Benedict","name":"Eggs Royale","price":16},{"cat":"Benedict","name":"Eggs Caprese","price":14},{"cat":"Benedict","name":"Eggs Florentine","price":14},{"cat":"Brunch","name":"Avocado Toasts","price":12.5},{"cat":"Brunch","name":"Za'atar Sweet Potato","price":12.5},{"cat":"Brunch","name":"Smoked Salmon & Eggs","price":14},{"cat":"Brunch","name":"Smoked Salmon, Avo & Eggs","price":16},{"cat":"Toasties","name":"Cheese Chutney Toastie","price":9},{"cat":"Toasties","name":"Haloumi, Harissa & Mushroom","price":11},{"cat":"Toasties","name":"Chorizo & Tomato Croque Monsieur","price":10.5},{"cat":"Toasties","name":"Pepper & Mushroom Croque Monsieur","price":9.5},{"cat":"Toasties","name":"BLT Bloomer","price":9},{"cat":"Drinks","name":"Flat white","price":3},{"cat":"Drinks","name":"Cappuccino","price":3.2},{"cat":"Drinks","name":"Hot chocolate","price":4}];
 </script>

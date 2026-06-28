@@ -279,7 +279,7 @@
   function ensureModal() {
     if (overlay) return;
     overlay = el('<div class="mzf-overlay" role="dialog" aria-modal="true"><div class="mzf-modal">' +
-      '<div class="mzf-head"><h3>' + esc(state.name || "Get in touch") + '</h3><button class="mzf-x" aria-label="Close">×</button></div>' +
+      '<div class="mzf-head"><h3>' + esc(window.MASUL_NAME || state.name || "Get in touch") + '</h3><button class="mzf-x" aria-label="Close">×</button></div>' +
       '<div class="mzf-tabs"></div><div class="mzf-body"></div></div></div>');
     document.body.appendChild(overlay);
     tabsEl = overlay.querySelector(".mzf-tabs");
