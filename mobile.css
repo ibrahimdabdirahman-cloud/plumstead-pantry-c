@@ -1,0 +1,117 @@
+html,
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 14px !important;
+    column-gap: 10px !important;
+    row-gap: 6px !important;
+  }
+
+  header > a:first-child {
+    min-width: 0;
+    font-size: 18px !important;
+    line-height: 1.1;
+  }
+
+  header > a:first-child > div:first-child {
+    flex: 0 0 36px;
+  }
+
+  header > a:first-child > div:last-child {
+    font-size: 16px !important;
+    line-height: 1.05;
+  }
+
+  header > div:last-child {
+    margin-left: auto;
+  }
+
+  header > div:last-child > span {
+    display: none !important;
+  }
+
+  header > div:last-child a,
+  header > a:last-child {
+    padding: 10px 13px !important;
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+
+  header nav {
+    display: flex !important;
+    order: 3;
+    width: 100%;
+    gap: 20px !important;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 2px 0;
+    scrollbar-width: none;
+  }
+
+  header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  header nav a {
+    display: inline-flex;
+    align-items: center;
+    min-width: max-content;
+    min-height: 40px;
+  }
+
+  section[style*="display:flex"] {
+    flex-direction: column !important;
+  }
+
+  section > div[style*="padding:78px 56px"] {
+    padding: 52px 18px !important;
+  }
+
+  image-slot[style*="height:580px"],
+  image-slot[style*="height:460px"],
+  image-slot[style*="height:430px"],
+  image-slot[style*="height:360px"] {
+    height: min(82vw, 360px) !important;
+  }
+
+  [style*="grid-auto-rows"] {
+    grid-auto-rows: 190px !important;
+  }
+
+  [style*="grid-column"],
+  [style*="grid-row"] {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  [style*="display:flex"][style*="gap:14px"] {
+    flex-wrap: wrap !important;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  img,
+  svg,
+  video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    overflow-wrap: anywhere;
+  }
+
+  section [style*="display:flex"][style*="gap:14px"] > a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
